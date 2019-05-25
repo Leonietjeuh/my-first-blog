@@ -3,14 +3,22 @@
         <title>EXTREME WEBSITE G</title>
     </head>
     <body>
-        <h1>EXTREME WEBSITE G</h1>
-        <p>Goede titel wel</p>
+        <h1>VAKANTIE VERHAALTJES</h1>
+        <p>Ja</p>
         <div>
-            <h1><a href="/">Blog</a></h1>
-        </div>
-        <p>Haha doei</p>
-        <h2>GRAPJE TOCH NOG NIET DOEI</h2>
-        <h3>Extreme sub-heading</h3>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+        <p>Overbodige line aan code</p>
+        <h2>Extreem overbodige heading</h2>
+        <h3>Nog eentje</h3>
         <p>Hier is nog meer text vriend</p>
         <strong>KIJK HIER DAN</strong>
     </body>
